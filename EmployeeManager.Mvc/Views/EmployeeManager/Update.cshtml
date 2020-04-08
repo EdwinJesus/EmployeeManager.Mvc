@@ -1,0 +1,21 @@
+﻿@model Employee
+<h2>Update existing employee</h2>
+<h3 class="message">@ViewBag.Message</h3>
+<form asp-controller="EmployeeManager" asp-action="Update"
+      method="post">
+
+    <table border="0">
+        <tr>
+            <td class="right">
+                <label asp-for="EmployeeID">
+
+                </label>:
+            </td>
+            <td>
+                <input type="hidden" asp-for="EmployeeID" />
+                <span>@Model.EmployeeID</span>
+            </td>
+        </tr>
+    </table>
+
+</form>
